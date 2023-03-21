@@ -1,4 +1,10 @@
+const { ethers, BigNumber } = require('ethers'); // 5.xx
+
 const helper = {};
+
+helper.initProvider = (rpc) => {
+    return new ethers.providers.JsonRpcProvider(rpc);
+}
 
 /* 
 {
